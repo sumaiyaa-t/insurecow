@@ -152,3 +152,16 @@ nav .navbar-nav li a:hover {
         box-shadow: rgba(62, 135, 27, 0.25) 0px 4px 10px;
     }
 }
+
+/*=============== Media screen for tab (portrait) ===============*/
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+    
+    .card-style {
+        display: none;
+    }
+
+    .login-card {
+        box-shadow: rgba(62, 135, 27, 0.25) 0px 4px 10px;
+    }
+}
