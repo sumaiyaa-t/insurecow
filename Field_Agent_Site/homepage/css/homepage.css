@@ -72,6 +72,8 @@ nav .navbar-nav li a:hover {
 
 .card-style {
     border-radius: 15px;
+    border: none;
+    box-shadow: rgba(62, 135, 27, 0.25) 0px 4px 8px;
 }
 
 .card-block-top {
@@ -82,7 +84,7 @@ nav .navbar-nav li a:hover {
 }
 
 .card-block-down {
-    background-color: rgb(178,225,156, 0.2);
+    background-color: rgb(178, 225, 156, 0.2);
     border-radius: 0 0 15px 15px;
 }
 
