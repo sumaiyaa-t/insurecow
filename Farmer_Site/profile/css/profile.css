@@ -60,11 +60,15 @@ nav .navbar-nav li a:hover {
 
 /*=============== PROFILE  ===============*/
 
+.card-title{
+    font-size: 22px;
+}
+
 .card-style {
     width: 50rem;
     border-radius: 10px;
     border: none;
-    box-shadow: rgba(79, 172, 35, 0.67) 0px 4px 8px;
+    box-shadow: rgba(79, 172, 35, 0.67) 0px 4px 10px;
 }
 
 .card-block-top {
