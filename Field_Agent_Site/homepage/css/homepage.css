@@ -61,7 +61,7 @@ nav .navbar-nav li a:hover {
 /*=============== HOMEPAGE ===============*/
 
 .p-greeting {
-    font-size: 24px;
+    font-size: 26px;
     text-align: center;
 }
 
@@ -73,7 +73,12 @@ nav .navbar-nav li a:hover {
 .card-style {
     border-radius: 15px;
     border: none;
-    box-shadow: rgba(62, 135, 27, 0.25) 0px 4px 8px;
+    background-color: rgb(178, 225, 156, 0.2);
+}
+
+.card-title {
+    font-size: 21px;
+    text-shadow: rgba(0, 0, 0, 0.1) 0px 2px 1px;
 }
 
 .card-block-top {
@@ -83,9 +88,9 @@ nav .navbar-nav li a:hover {
     border-radius: 15px 15px 0 0;
 }
 
-.card-block-down {
-    background-color: rgb(178, 225, 156, 0.2);
+.img-card {
     border-radius: 0 0 15px 15px;
+    box-shadow: rgba(62, 135, 27, 0.67) 0px 4px 15px;
 }
 
 .card-button {
@@ -96,7 +101,11 @@ nav .navbar-nav li a:hover {
     text-align: center;
     border: none;
     border-radius: 20px;
-    padding: 8px 0px;
+    padding: 5px 0px;
+}
+
+.card-button:hover {
+    color: #fff;
 }
 
 /*=============== FOOTER ===============*/
@@ -123,5 +132,16 @@ nav .navbar-nav li a:hover {
     .signout-button {
         width: 120px;
         padding: 6px 0px;
+    }
+
+    /*Home Page */
+    .p-greeting {
+        font-size: 24px;
+        text-align: left;
+    }
+
+    .p-welcome-text {
+        font-size: 24px;
+        text-align: left;
     }
 }
