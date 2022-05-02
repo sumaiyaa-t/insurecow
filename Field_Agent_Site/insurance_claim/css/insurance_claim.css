@@ -60,11 +60,15 @@ nav .navbar-nav li a:hover {
 
 /*=============== INSURANCE CLAIM  ===============*/
 
+.card-title {
+    font-size: 22px;
+}
+
 .card-style {
     width: 50rem;
     border-radius: 10px;
     border: none;
-    box-shadow: rgba(79, 172, 35, 0.67) 0px 4px 8px;
+    box-shadow: rgba(79, 172, 35, 0.67) 0px 4px 10px;
 }
 
 .card-block-top {
@@ -81,6 +85,14 @@ nav .navbar-nav li a:hover {
     background-color: #FDFCFC;
     border-radius: 0 0 10px 10px;
     padding: 20px 100px 80px 50px;
+}
+
+.insurance-form {
+    width: 400px;
+}
+
+.input-form {
+    border-radius: 10px;
 }
 
 /* Submit Button*/
@@ -119,5 +131,10 @@ nav .navbar-nav li a:hover {
     .signout-button {
         width: 120px;
         padding: 6px 0px;
+    }
+
+    /* Insurance form */
+    .insurance-form {
+        width: 200px;
     }
 }
