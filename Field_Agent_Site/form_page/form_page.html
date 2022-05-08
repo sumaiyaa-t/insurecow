@@ -12,9 +12,6 @@
     <!--==================== FONT AWESOME ====================-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
-
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="./css/form_page.css" />
 
@@ -88,16 +85,15 @@
         <p class="heading mt-4">Registration Form</p>
 
         <div class="card card-style mt-4 mb-5">
-            <form class="">
-
-                <div class="card-block p-2 card-block-top mb-4">
+            <form>
+                <div class="card-block p-2 card-block-top">
                     <h4 class="ms-4">Farmer Information</h4>
                 </div>
 
-                <div class="card-block p-2 card-block-down">
+                <div class="card-block p-2">
 
                     <!-- 2 column grid layout with text inputs for the first and last names -->
-                    <div class="row px-4">
+                    <div class="row px-4 mt-4">
                         <div class="col-md-6 mb-4">
                             <div class="form-outline">
                                 <label class="form-label" for="inputFirstName">First name :</label>
@@ -181,12 +177,15 @@
                     </div>
                 </div>
 
+                <!-- Cattle Information-->
                 <div class="card-block p-2 card-block-middle mb-4">
                     <h4 class="ms-4">Cattle Information</h4>
                 </div>
-                <div class="card-block p-2 card-block-down mb-4">
-                    <div class="row px-4">
 
+                <!-- Cattle species input -->
+
+                <div class="card-block p-2 mb-4">
+                    <div class="row px-4">
                         <div class="col-md-4 mb-4">
                             <div class="form-outline">
                                 <label class="form-label" for="inputSpecies">Cattle Species :</label>
@@ -196,8 +195,9 @@
                                     </select>
                                 </div>
                             </div>
-
                         </div>
+
+                        <!-- Cattle Breed input -->
 
                         <div class="col-md-4 mb-4">
                             <div class="form-outline">
@@ -210,6 +210,8 @@
                             </div>
                         </div>
 
+                        <!-- Age input -->
+
                         <div class="col-md-4 mb-4">
                             <div class="form-outline">
                                 <label class="form-label" for="inputAge">Age :</label>
@@ -219,6 +221,8 @@
 
                     </div>
 
+                    <!-- Weight input -->
+
                     <div class="row px-4">
                         <div class="col-md-4 mb-4">
                             <div class="form-outline">
@@ -226,6 +230,8 @@
                                 <input type="text" id="inputWeight" class="form-control input-style" />
                             </div>
                         </div>
+
+                        <!-- Gender input -->
 
                         <div class="col-md-4 mb-4">
                             <div class="form-outline">
@@ -241,12 +247,12 @@
 
                     <hr>
 
+                    <!-- Date input -->
                     <div class="row px-4">
                         <div class="col-md-6 mb-4">
                             <div class="form-outline">
                                 <label class="form-label" for="inputDate">Issuing Date :</label>
                                 <div class="form-group">
-                                    <!-- Date input -->
                                     <input class="form-control input-style" type="date" />
                                 </div>
                             </div>
@@ -265,11 +271,13 @@
                     </div>
                 </div>
 
+                <!-- Cattle Picture-->
+
                 <div class="card-block p-2 card-block-middle mb-4">
                     <h4 class="ms-4">Cattle Pictures </h4>
                 </div>
 
-                <div class="card-block p-2 card-block-down mb-4">
+                <div class="card-block p-2 mb-4">
 
                     <div class="row px-4 mt-4 mb-3">
 
@@ -309,7 +317,7 @@
                                 </div>
 
                                 <div class="file2-upload-content">
-                                    <img class="file2-upload-image" src="" alt="cow-with-owner" />
+                                    <img class="file2-upload-image" src="" alt="left-side" />
 
                                 </div>
                                 <div class="image2-title-wrap">
@@ -333,7 +341,7 @@
                                 </div>
 
                                 <div class="file3-upload-content">
-                                    <img class="file3-upload-image" src="" alt="cow-with-owner" />
+                                    <img class="file3-upload-image" src="" alt="right-side" />
 
                                 </div>
                                 <div class="image3-title-wrap">
@@ -357,7 +365,7 @@
                                 </div>
 
                                 <div class="file4-upload-content">
-                                    <img class="file4-upload-image" src="" alt="cow-with-owner" />
+                                    <img class="file4-upload-image" src="" alt="special-marks" />
 
                                 </div>
                                 <div class="image4-title-wrap">
@@ -400,20 +408,22 @@
                     <h4 class="ms-4"> Attachment </h4>
                 </div>
 
-                <div class="card-block p-2 card-block-down mb-4">
+                <div class="card-block p-2 mb-4">
                     <div class="row px-4 mt-4 mb-3">
+
+                        <!-- Owner NID PDF -->
+
                         <div class="col-md-4 mb-5">
                             <p>Owner NID : </p>
                             <div class="file-upload">
-
                                 <div class="pdf-upload-wrap">
                                     <input class="pdf-upload-input" type='file' onchange="readpdfURL(this);"
-                                    id="myPdf" accept="application/pdf, application/vnd.ms-excel" />
+                                        accept="application/pdf, application/vnd.ms-excel" />
                                     <img class="img-card" src="./images/pdf.png" />
                                 </div>
 
                                 <div class="pdf-upload-content">
-                                    <embed class="pdf-upload-image" src="" alt=""/>
+                                    <embed class="pdf-upload-image" src="" alt="" />
 
                                 </div>
                                 <div class="pdf-title-wrap">
@@ -424,6 +434,55 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Vet Certificate PDF -->
+
+                        <div class="col-md-4 mb-5">
+                            <p>Vet Certificate : </p>
+                            <div class="file-upload">
+                                <div class="pdf2-upload-wrap">
+                                    <input class="pdf2-upload-input" type='file' onchange="readpdfURL2(this);"
+                                        accept="application/pdf, application/vnd.ms-excel" />
+                                    <img class="img-card" src="./images/pdf.png" />
+                                </div>
+
+                                <div class="pdf2-upload-content">
+                                    <embed class="pdf2-upload-image" src="" alt="" />
+
+                                </div>
+                                <div class="pdf2-title-wrap">
+                                    <button class="file-upload-btn mt-4" type="button"
+                                        onclick="$('.pdf2-upload-input').trigger( 'click' )">Upload</button>
+                                    <button type="button" onclick="removepdfUpload2()" class="remove-image">
+                                        <i class="fa-solid fa-circle-xmark"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Chairman Certificate PDF -->
+
+                        <div class="col-md-4 mb-5">
+                            <p>Chairman Certificate : </p>
+                            <div class="file-upload">
+                                <div class="pdf3-upload-wrap">
+                                    <input class="pdf3-upload-input" type='file' onchange="readpdfURL3(this);"
+                                        id="myPdf" accept="application/pdf, application/vnd.ms-excel" />
+                                    <img class="img-card" src="./images/pdf.png" />
+                                </div>
+
+                                <div class="pdf3-upload-content">
+                                    <embed class="pdf3-upload-image" src="" alt="" />
+                                </div>
+
+                                <div class="pdf3-title-wrap">
+                                    <button class="file-upload-btn mt-4" type="button"
+                                        onclick="$('.pdf3-upload-input').trigger( 'click' )">Upload</button>
+                                    <button type="button" onclick="removepdfUpload3()" class="remove-image">
+                                        <i class="fa-solid fa-circle-xmark"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -431,8 +490,10 @@
                     <h4 class="ms-4"> Checking </h4>
                 </div>
 
-                <div class="card-block p-2 card-block-down mb-4">
+                <div class="card-block p-2 mb-4">
                     <div class="row px-4">
+
+                        <!-- Checked By input -->
 
                         <div class="col-md-6 mb-4">
                             <div class="form-outline">
@@ -441,6 +502,8 @@
                             </div>
                         </div>
 
+                        <!-- MR Number input -->
+
                         <div class="col-md-6 mb-4">
                             <div class="form-outline">
                                 <label class="form-label" for="inputMR">MR Number :</label>
@@ -448,20 +511,21 @@
                             </div>
                         </div>
 
+                        <!-- Date input -->
+
                         <div class="col-md-6 mb-4">
                             <div class="form-outline">
                                 <label class="form-label" for="inputDate">MR Date :</label>
                                 <div class="form-group">
-                                    <!-- Date input -->
                                     <input class="form-control input-style" type="date" />
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
 
+                <!--Terms & Conditions-->
                 <div class="px-4 mb-4">
-
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
                         <label class="form-check-label" for="invalidCheck2">
@@ -556,13 +620,18 @@
 
     <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
+    <!--==================== Upload Image ====================-->
+    <script src="./js/image_upload/face_of_cow.js"></script>
+    <script src="./js/image_upload/left_side.js"></script>
+    <script src="./js/image_upload/right_side.js"></script>
+    <script src="./js/image_upload/special_marks.js"></script>
+    <script src="./js/image_upload/cow_with_owner.js"></script>
 
-    <script src="./js/face_of_cow.js"></script>
-    <script src="./js/left_side.js"></script>
-    <script src="./js/right_side.js"></script>
-    <script src="./js/special_marks.js"></script>
-    <script src="./js/cow_with_owner.js"></script>
-    <script src="./js/pdf_upload.js"></script>
+    <!--==================== Upload PDF ====================-->
+    <script src="./js/pdf_upload/owner_nid_pdf.js"></script>
+    <script src="./js/pdf_upload/vet_certificate_pdf.js"></script>
+    <script src="./js/pdf_upload/chairman_certificate_pdf.js"></script>
+
 
 </body>
 

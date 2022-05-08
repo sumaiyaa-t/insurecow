@@ -60,14 +60,15 @@ nav .navbar-nav li a:hover {
 
 /*=============== FORM PAGE ===============*/
 
-.heading{
+.heading {
     font-size: 28px;
 }
 
-.card-style{
+.card-style {
     border-radius: 10px;
     border: none;
-    box-shadow: rgba(79, 172, 35, 0.67) 0px 4px 8px;    
+    box-shadow: rgba(79, 172, 35, 0.67) 0px 4px 8px;
+    background-color: #FDFCFC;
 }
 
 .card-block-top {
@@ -81,13 +82,7 @@ nav .navbar-nav li a:hover {
     color: #fff;
 }
 
-.card-block-down {
-    background-color: #FDFCFC;
-    border-radius: 0 0 10px 10px;
-    padding: 20px 100px 80px 50px;
-}
-
-.input-style{
+.input-style {
     border-radius: 10px;
 }
 
@@ -98,7 +93,7 @@ nav .navbar-nav li a:hover {
     width: 240px;
 }
 
-.file-upload-btn  {
+.file-upload-btn {
     width: 120px;
     height: 30px;
     background: #23BB86;
@@ -110,13 +105,13 @@ nav .navbar-nav li a:hover {
     margin-right: 80px;
 }
 
-.file-upload-btn:hover  {
+.file-upload-btn:hover {
     color: #ffffff;
     transition: all .2s ease;
     cursor: pointer;
 }
 
-.file-upload-btn:active{
+.file-upload-btn:active {
     border: 0;
     transition: all .2s ease;
 }
@@ -134,7 +129,7 @@ nav .navbar-nav li a:hover {
 .file2-upload-input,
 .file3-upload-input,
 .file4-upload-input,
-.file5-upload-input{
+.file5-upload-input {
     position: absolute;
     margin: 0;
     padding: 0;
@@ -160,7 +155,7 @@ nav .navbar-nav li a:hover {
 .file2-upload-image,
 .file3-upload-image,
 .file4-upload-image,
-.file5-upload-image{
+.file5-upload-image {
     width: 240px;
     height: 180px;
     border-radius: 12px;
@@ -174,7 +169,7 @@ nav .navbar-nav li a:hover {
     transition: all .2s ease;
 }
 
-.remove-image:hover{
+.remove-image:hover {
     transition: all .2s ease;
     cursor: pointer;
 }
@@ -186,12 +181,16 @@ nav .navbar-nav li a:hover {
 
 /* pdf upload */
 
-.pdf-upload-content{
+.pdf-upload-content,
+.pdf2-upload-content,
+.pdf3-upload-content {
     display: none;
     text-align: center;
 }
 
-.pdf-upload-input{
+.pdf-upload-input,
+.pdf2-upload-input,
+.pdf3-upload-input {
     position: absolute;
     margin: 0;
     padding: 0;
@@ -202,14 +201,16 @@ nav .navbar-nav li a:hover {
     cursor: pointer;
 }
 
-.pdf-upload-wrap {
+.pdf-upload-wrap,
+.pdf2-upload-wrap,
+.pdf3-upload-wrap {
     margin-top: 20px;
     position: relative;
 }
 
-
-
-.pdf-upload-image{
+.pdf-upload-image,
+.pdf2-upload-image,
+.pdf3-upload-image {
     width: 240px;
     height: 180px;
     border-radius: 12px;
@@ -218,7 +219,7 @@ nav .navbar-nav li a:hover {
 
 /* Submit Button*/
 
-.register-button{
+.register-button {
     width: 120px;
     height: 30px;
     background: #23BB86;
